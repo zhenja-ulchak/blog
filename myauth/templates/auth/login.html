@@ -1,0 +1,37 @@
+{% extends "page/index.html" %}
+{% load static %}
+{% block 'content' %}
+<style>
+  .form form {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 300;
+    margin-bottom: 100px;
+    padding-top: 112px;
+  }
+</style>
+<div class="form" style="">
+
+    {% load crispy_forms_tags %}         
+
+    <!--Register--> 
+    <div class="container " style="
+    padding-top: 130px;
+    padding-bottom: 139px;
+">
+        <h1>Login</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ login_form|crispy }}                    
+            <button style="padding: 1px 27px;
+            border: 1px solid #b7b9c7;
+            color: #ffffff;
+            background: #463b50;" class="btn btn-primary" type="submit">Login</button>
+        </form>
+        <p class="text-center">Don't have an account? <a href="/register">Create an account</a>.</p>    
+    </div>
+ 
+</div>
+
+{% endblock %}

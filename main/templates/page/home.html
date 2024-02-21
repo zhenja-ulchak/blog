@@ -1,0 +1,129 @@
+
+{% extends "page/index.html" %}
+{% load static %}
+{% block 'content' %}
+<div class="titlebar titlebar-sm scheme-light text-center" data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url(./assets/demo/bg/bg-31.jpg);">
+
+    <div class="titlebar-inner">
+        <div class="container titlebar-container">
+            <div class="row titlebar-container">
+                <div class="titlebar-col col-md-12">
+                    <h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>with Sidebar</h1>
+                    <a class="titlebar-scroll-link" href="#content" data-localscroll="true"><i class="fa fa-angle-down"></i></a>
+                </div><!-- /.titlebar-col -->
+            </div><!-- /.titlebar-row -->
+        </div><!-- /.titlebar-container -->
+    </div><!-- /.titlebar-inner -->
+    
+</div><!-- /.titlebar -->
+<main id="content" class="content ">
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <div class="liquid-blog-posts">
+                    <div class="liquid-blog-grid liquid-blog-style-classic row">
+                        {% for post in posts%}
+                       
+                        <div class="col-md-12">
+
+                            <article class="liquid-lp liquid-blog-item liquid-blog-item-grid liquid-blog-scheme-dark mb-50">
+
+                                <figure class="liquid-lp-media">
+                                    <a href="#">
+                                        <img src="{{ post.image.url }}" alt="Lates Post">
+                                    </a>
+                                </figure>
+                                
+                                <div class="liquid-blog-item-inner">
+                                    
+                                    <a href="#" class="liquid-overlay-link">ghrthrb</a>
+                            
+                                    <header class="liquid-lp-header">
+                                        <h2 class="liquid-lp-title font-weight-bold h3 size-sm">
+                                            <a href="#" data-split-text="text" data-split-options='{ "type": "lines" }'>{{ post.title }}</a>
+                                        </h2>
+                                        <div class="liquid-lp-details">
+                                            <time class="liquid-lp-date" datetime="2017-09-25">{{ post.date }}</time>
+                                          
+                                        </div><!-- /.liquid-lp-details -->
+                                    </header>
+                                    
+                                    <div class="liquid-lp-excerpt">
+                                        <p>{{ post.short_description }}</p>
+                                    </div><!-- /.latest-post-excerptc -->
+                                    
+                                    <footer class="liquid-lp-footer">
+                                        <a href="#" class="btn btn-naked text-uppercase ltr-sp-1 size-sm font-weight-bold liquid-lp-read-more">
+                                            <span>
+                                                <span class="btn-line btn-line-before"></span>
+                                                <span class="btn-txt">читати</span>
+                                                <span class="btn-line btn-line-after"></span>
+                                            </span>
+                                        </a>
+                                    </footer>
+                                    
+                                </div><!-- /.liquid-blog-item-inner -->
+                                
+                            </article>
+
+                        </div><!-- /.col-md-12 -->
+                         {% endfor %} 
+                      
+                    </div><!-- /.liquid-blog-grid liquid-blog-style-classic row -->
+                </div><!-- /.liquid-blog-posts -->
+
+            </div><!-- /.col-md-8 -->
+
+            <div class="col-md-3 col-md-offset-1 sidebar-container">
+
+                <aside class="main-sidebar">
+
+                    <div class="widget widget_search">
+                        <form role="search" method="get" class="search-form" action="#">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" class="search-field" placeholder="Search …" value="" name="s">
+                            </label>
+                            <input type="submit" class="search-submit" value="Search">
+                        </form>
+                    </div><!-- /.widget_search -->
+
+                    <div class="widget widget_categories">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul>
+                            <li><a href="#">Beauty</a> (2) </li>
+                            <li><a href="#">Business</a> (2) </li>
+                            <li><a href="#">Carousel</a> (4) </li>
+                            <li><a href="#">Classic</a> (5) </li>
+                            <li><a href="#">Featured</a> (1) </li>
+                            <li><a href="#">Food &amp; Drink</a> (1)
+                            </li>
+                            <li><a href="#">Grid</a> (12) </li>
+                            <li><a href="#">Main New</a> (3) </li>
+                            <li><a href="#">Masonry</a> (16) </li>
+                            <li><a href="#">Masonry Alt</a> (10)
+                            </li>
+                            <li><a href="#">Motivation</a> (2) </li>
+                            <li><a href="#">Split</a> (5) </li>
+                            <li><a href="#">Travel</a> (2) </li>
+                        </ul>
+                    </div><!-- /.widget_categories -->
+
+                        <div class="widget widget_media_image">
+                            <a href="#">
+                                <img src="./assets/demo/misc/sponsored-min.jpg" alt="Sponsoreds">
+                            </a>
+                        </div><!-- /.widget_media_image -->
+
+                </aside>
+
+            </div><!-- /.col-md-3 col-md-offset-1 sidebar-container -->
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+    
+</main><!-- /#content.content -->
+{% endblock %}
