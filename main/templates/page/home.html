@@ -25,25 +25,25 @@
 
                 <div class="liquid-blog-posts">
                     <div class="liquid-blog-grid liquid-blog-style-classic row">
-                        {% for post in posts%}
+                        {% for post in posts %}
                        
                         <div class="col-md-12">
 
                             <article class="liquid-lp liquid-blog-item liquid-blog-item-grid liquid-blog-scheme-dark mb-50">
 
                                 <figure class="liquid-lp-media">
-                                    <a href="#">
+                                    <a href="{% url 'post' slug=post.slug %}">
                                         <img src="{{ post.image.url }}" alt="Lates Post">
                                     </a>
                                 </figure>
                                 
                                 <div class="liquid-blog-item-inner">
                                     
-                                    <a href="#" class="liquid-overlay-link">ghrthrb</a>
+                                    <a href="{% url 'post' slug=post.slug %}" class="liquid-overlay-link">ghrthrb</a>
                             
                                     <header class="liquid-lp-header">
                                         <h2 class="liquid-lp-title font-weight-bold h3 size-sm">
-                                            <a href="#" data-split-text="text" data-split-options='{ "type": "lines" }'>{{ post.title }}</a>
+                                            <a href="{% url 'post' slug=post.slug %}" data-split-text="text" data-split-options='{ "type": "lines" }'>{{ post.title }}</a>
                                         </h2>
                                         <div class="liquid-lp-details">
                                             <time class="liquid-lp-date" datetime="2017-09-25">{{ post.date }}</time>
@@ -94,21 +94,14 @@
                     <div class="widget widget_categories">
                         <h3 class="widget-title">Categories</h3>
                         <ul>
-                            <li><a href="#">Beauty</a> (2) </li>
-                            <li><a href="#">Business</a> (2) </li>
-                            <li><a href="#">Carousel</a> (4) </li>
-                            <li><a href="#">Classic</a> (5) </li>
-                            <li><a href="#">Featured</a> (1) </li>
-                            <li><a href="#">Food &amp; Drink</a> (1)
-                            </li>
-                            <li><a href="#">Grid</a> (12) </li>
-                            <li><a href="#">Main New</a> (3) </li>
-                            <li><a href="#">Masonry</a> (16) </li>
-                            <li><a href="#">Masonry Alt</a> (10)
-                            </li>
-                            <li><a href="#">Motivation</a> (2) </li>
-                            <li><a href="#">Split</a> (5) </li>
-                            <li><a href="#">Travel</a> (2) </li>
+                            {% if category %}
+                                {% for categorys in category%}
+                                
+                                 <li><a href="?category={{categorys.slug}}">{{categorys.title}}</a> (2) </li>
+                                 
+                                {% endfor %} 
+                            {% endif %}
+                      
                         </ul>
                     </div><!-- /.widget_categories -->
 
