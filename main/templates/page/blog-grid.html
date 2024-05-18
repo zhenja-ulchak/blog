@@ -1,0 +1,92 @@
+
+{% extends "page/index.html" %}
+{% load static %}
+{% block 'content' %}
+	
+		<main id="content" class="content">
+			
+			<section class="vc_row">
+				<div class="container">
+					<div class="row">
+
+						<div class="lqd-column col-md-8 col-md-offset-2 text-center">
+
+							<h6 class="font-size-12 text-uppercase ltr-sp-1 opacity-05">Recent Articles</h6>
+							<h1
+								class="lh-125"
+								data-fittext="true"
+								data-fittext-options='{"compressor":0.65, "maxFontSize": 50, "minFontSize": 32}'
+							>
+								Writing is a socially acceptable form of schizophrenia
+							</h1>
+
+						</div><!-- /.lqd-column col-md-8 -->
+
+						<div class="lqd-column col-md-12 pt-85" style="border-top: 3px solid #000">
+
+							<div class="liquid-blog-posts">
+								<div class="liquid-blog-grid row" data-liquid-masonry="true">
+
+                            		{% for input_api in api_cart  %}
+                            		
+									<div class="lqd-column col-md-4 masonry-item">
+
+										<article class="liquid-lp liquid-blog-item liquid-blog-item-grid liquid-blog-scheme-dark mb-60">
+
+											<figure class="liquid-lp-media">
+												<a href="#">
+													<img src="{{ input_api.url }}" alt="Lates Post">
+												</a>
+											</figure>
+											
+											<div class="liquid-blog-item-inner">
+												
+												<a href="#" class="liquid-overlay-link"></a>
+										
+												<header class="liquid-lp-header">
+													<h2 class="liquid-lp-title font-weight-bold h3 size-sm">
+														<a href="#" data-split-text="text" data-split-options='{ "type": "lines" }'>{{ input_api.title }}</a>
+													</h2>
+													<div class="liquid-lp-details">
+														<time class="liquid-lp-date" datetime="2017-09-25">5 hours ago</time>
+														in
+														<ul class="liquid-lp-category">
+															<li><a href="#">Business</a></li>
+														</ul>
+													</div><!-- /.liquid-lp-details -->
+												</header>
+												
+												<div class="liquid-lp-excerpt">
+													<p>One of my favourite things I like to watch is the bloopers and outtakes that are shown of mistakes made during the making of a movie.</p>
+												</div><!-- /.latest-post-excerptc -->
+												
+												<footer class="liquid-lp-footer">
+													<a href="#" class="btn btn-naked text-uppercase ltr-sp-1 size-sm font-weight-bold liquid-lp-read-more">
+														<span>
+															<span class="btn-line btn-line-before"></span>
+															<span class="btn-txt">Continue Reading</span>
+															<span class="btn-line btn-line-after"></span>
+														</span>
+													</a>
+												</footer>
+												
+											</div><!-- /.liquid-blog-item-inner -->
+											
+										</article>
+										
+									</div><!-- /.col-md-4 -->
+									{% endfor%} 
+								
+
+								</div><!-- /.liquid-blog-grid row -->
+							</div><!-- /.liquid-blog-posts -->
+
+						</div><!-- /.col-md-12 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section><!-- /.vc_row -->
+			
+		</main><!-- /#content.content -->
+		
+		{% endblock %}
