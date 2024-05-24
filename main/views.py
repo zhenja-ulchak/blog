@@ -34,10 +34,11 @@ def blog_api(request):
     return render(request,'page/blog-grid.html', context )
 
 
-def image_api(request):
-    apifree_image = api_input.apifree_image()
+def info_api(request):
+    apifree_info = api_input.apifree_info()
+    posts = Post.objects.all()[:2]
     context = {
-       'apifree_image' : apifree_image,
-       
+       'apifree_info' : apifree_info,
+       'posts' : posts
     }
-    return render(request,'image/images.html', context )
+    return render(request,'info/info.html', context )

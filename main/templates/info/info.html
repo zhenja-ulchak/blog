@@ -1,0 +1,180 @@
+{% extends "page/index.html"  %}
+{% block 'content' %}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+	
+	<div id="wrap">
+		
+
+		<main id="content" class="content">
+			
+		
+			
+		 <section class="vc_row pt-50 pb-50">
+				<div class="container">
+					<div class="row">
+            {% for info in apifree_info %}
+						<div class="lqd-column col-md-4">
+
+							<div class="ld-flipbox ld-flipbox-rl">
+
+								<div class="ld-flipbox-wrap">
+							
+									<div class="ld-flipbox-face ld-flipbox-front bg-primary">
+							
+										<span class="ld-flipbox-overlay"></span>
+										
+										<div class="ld-flipbox-inner">
+											
+											<div class="iconbox iconbox-md">
+												<div class="iconbox-icon-wrap">
+													<span class="iconbox-icon-container text-white">
+														{{ info.date }}
+													</span>
+												</div><!-- /.iconbox-icon-wrap -->
+												<div class="contents">
+													<h3 class="font-weight-bold">{{ info.localName }}</h3>
+													
+												</div><!-- /.contents -->
+											</div><!-- /.iconbox -->	
+											
+										</div><!-- /.ld-flipbox-inner -->
+										
+									</div><!-- /.ld-flipbox-front -->
+									
+									<div class="ld-flipbox-face ld-flipbox-back">
+										
+										<span class="ld-flipbox-overlay ld-overlay"></span>
+							
+										<div class="ld-flipbox-inner">
+							
+											<a href="#" class=" font-size-12 lh-2 text-uppercase ltr-sp-175 btn-white">
+												
+                          <p style="font-size: 18px; color:antiquewhite">{{ info.name }}</p>
+												
+											</a>
+							
+										</div><!-- /.ld-flipbox-inner -->
+							
+									</div><!-- /.ld-flipbox-back -->
+							
+								</div><!-- /.ld-flipbox-wrap -->
+							
+							</div><!-- /.ld-flipbox -->
+
+						</div><!-- /.lqd-column col-md-4 -->
+            {% endfor %}
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+	
+			<section class="vc_row pt-70 pb-70 bg-cover bg-none liquid-parallax-bg" style="background-image: url(./assets/demo/bg/bg-3.jpg);" data-parallax="true" data-parallax-options="{&quot;parallaxBG&quot;: true}"><div class="liquid-parallax-container"><figure class="liquid-parallax-figure will-change" style="height: 140%; background-image: url(&quot;file:///C:/Users/zhenja/Desktop/themeforest_J77ltvDg_ave_html_responsive_multi_purpose_template/ave-html/assets/demo/bg/bg-3.jpg&quot;); background-position: 0% 0%; transform: translateY(-18.3892%);"></figure></div>
+				<div class="container" style="background: #141622 !important;">
+					<div class="row">
+
+						<div class="lqd-column col-md-8">
+
+							<div class="ld-fancy-heading text-underline">
+								<h2 class="text-white ca-initvalues-applied split-text-applied lqd-animations-done" data-fittext="true" data-fittext-options="{&quot;compressor&quot;:0.55,&quot;maxFontSize&quot;:&quot;50&quot;,&quot;minFontSize&quot;:&quot;35&quot;}" data-split-text="true" data-custom-animations="true" data-ca-options="{&quot;triggerHandler&quot;:&quot;inview&quot;,&quot;animationTarget&quot;:&quot;.split-inner&quot;,&quot;duration&quot;:&quot;1200&quot;,&quot;delay&quot;:&quot;35&quot;,&quot;easing&quot;:&quot;easeOutQuint&quot;,&quot;direction&quot;:&quot;forward&quot;,&quot;initValues&quot;:{&quot;translateX&quot;:2,&quot;translateY&quot;:12,&quot;rotateZ&quot;:6,&quot;opacity&quot;:0},&quot;animations&quot;:{&quot;translateX&quot;:0,&quot;translateY&quot;:0,&quot;rotateZ&quot;:0,&quot;opacity&quot;:1}}" data-split-options="{&quot;type&quot;:&quot;chars, words&quot;}" style="font-size: 50px;">
+									<span class="ld-fh-txt"> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text=" Make" class="split-inner"><span class="split-txt"> <div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="M" class="split-inner"><span class="split-txt">M</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="a" class="split-inner"><span class="split-txt">a</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="k" class="split-inner"><span class="split-txt">k</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div></span></span></div> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="your" class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="y" class="split-inner"><span class="split-txt">y</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="o" class="split-inner"><span class="split-txt">o</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="u" class="split-inner"><span class="split-txt">u</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="r" class="split-inner"><span class="split-txt">r</span></span></div></span></span></div> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="website" class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="w" class="split-inner"><span class="split-txt">w</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="b" class="split-inner"><span class="split-txt">b</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="s" class="split-inner"><span class="split-txt">s</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="i" class="split-inner"><span class="split-txt">i</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="t" class="split-inner"><span class="split-txt">t</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div></span></span></div> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="unforgettable" class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="u" class="split-inner"><span class="split-txt">u</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="n" class="split-inner"><span class="split-txt">n</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="f" class="split-inner"><span class="split-txt">f</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="o" class="split-inner"><span class="split-txt">o</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="r" class="split-inner"><span class="split-txt">r</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="g" class="split-inner"><span class="split-txt">g</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="t" class="split-inner"><span class="split-txt">t</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="t" class="split-inner"><span class="split-txt">t</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="a" class="split-inner"><span class="split-txt">a</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="b" class="split-inner"><span class="split-txt">b</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="l" class="split-inner"><span class="split-txt">l</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div></span></span></div><br>
+										<span style="color: #ffafa2"><div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="Join" class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="J" class="split-inner"><span class="split-txt">J</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="o" class="split-inner"><span class="split-txt">o</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="i" class="split-inner"><span class="split-txt">i</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="n" class="split-inner"><span class="split-txt">n</span></span></div></span></span></div> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="the" class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="t" class="split-inner"><span class="split-txt">t</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="h" class="split-inner"><span class="split-txt">h</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div></span></span></div> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="Ave" class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="A" class="split-inner"><span class="split-txt">A</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="v" class="split-inner"><span class="split-txt">v</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="e" class="split-inner"><span class="split-txt">e</span></span></div></span></span></div> <div style="position:relative;display:inline-block;" class="lqd-words split-unit lqd-unit-animation-done"><span data-text="community." class="split-inner"><span class="split-txt"><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="c" class="split-inner"><span class="split-txt">c</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="o" class="split-inner"><span class="split-txt">o</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="m" class="split-inner"><span class="split-txt">m</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="m" class="split-inner"><span class="split-txt">m</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="u" class="split-inner"><span class="split-txt">u</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="n" class="split-inner"><span class="split-txt">n</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="i" class="split-inner"><span class="split-txt">i</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="t" class="split-inner"><span class="split-txt">t</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="y" class="split-inner"><span class="split-txt">y</span></span></div><div style="position:relative;display:inline-block;" class="lqd-chars split-unit lqd-unit-animation-done"><span data-text="." class="split-inner"><span class="split-txt">.</span></span></div></span></span></div></span>
+									</span>
+								</h2>
+							</div><!-- /.ld-fancy-heading -->
+
+						</div><!-- /.col-md-8 -->
+
+						<div class="lqd-column col-md-3 col-md-offset-1 text-center">
+							
+							<a href="#" class="btn btn-solid btn-sm semi-round btn-gradient px-3 btn-block" data-localscroll="true" data-localscroll-options="{&quot;scrollBelowSection&quot;: true}">
+								<span>
+									<span class="btn-gradient-bg"></span>
+									<span class="btn-txt">Join to download</span>
+									<span class="btn-gradient-bg btn-gradient-bg-hover"></span>
+								</span>
+							</a>
+
+							<div class="ld-fancy-heading mt-3">
+								<p class="text-white opacity-07 ca-initvalues-applied lqd-animations-done split-text-applied" data-split-text="true" data-custom-animations="true" data-ca-options="{&quot;triggerHandler&quot;:&quot;inview&quot;,&quot;animationTarget&quot;:&quot;.split-inner&quot;,&quot;duration&quot;:700,&quot;delay&quot;:100,&quot;easing&quot;:&quot;easeOutQuint&quot;,&quot;direction&quot;:&quot;forward&quot;,&quot;initValues&quot;:{&quot;scale&quot;:1},&quot;animations&quot;:{&quot;scale&quot;:1}}" data-split-options="{&quot;type&quot;:&quot;lines&quot;}">
+									<span class="ld-fh-txt" style=""><div class="lqd-lines split-unit lqd-unit-animation-done" style="display: block; text-align: center; position: relative;"><span data-text=" Do you have a question?" class="split-inner"><span class="split-txt"> Do you have a question?</span></span></div><div class="lqd-lines split-unit lqd-unit-animation-done" style="display: block; text-align: center; position: relative;"><span data-text=" Ask here." class="split-inner"><span class="split-txt"> Ask here.</span></span></div></span>
+								</p>
+							</div><!-- /.ld-fancy-heading -->
+
+						</div><!-- /.col-md-3 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			
+			<section class="vc_row pt-50 pb-50">
+				<div class="container">
+					<div class="row">
+						{% for post in posts %}
+						<div class="lqd-column col-md-6 px-md-5">
+
+							<div class="ld-flipbox ld-flipbox-tb">
+
+								<div class="ld-flipbox-wrap">
+							
+									<div class="ld-flipbox-face ld-flipbox-front bg-gradient-primary-br">
+							
+										<span class="ld-flipbox-overlay ld-overlay"></span>
+										
+										<div class="ld-flipbox-inner">
+											
+											<div class="iconbox iconbox-xl">
+												<div class="iconbox-icon-wrap">
+													<span class="iconbox-icon-container text-white mb-4">
+														<a href="{% url 'post' slug=post.slug %}">
+															<img style="    width: 150px;" src="{{ post.image.url }}" alt="Lates Post">
+														</a>
+													</span>
+												</div><!-- /.iconbox-icon-wrap -->
+												<div class="contents">
+													<h3 class="font-weight-bold">{{ post.title }}</h3>
+												</div><!-- /.contents -->
+											</div><!-- /.iconbox -->	
+											
+										</div><!-- /.ld-flipbox-inner -->
+										
+									</div><!-- /.ld-flipbox-front -->
+									
+									<div class="ld-flipbox-face ld-flipbox-back" style="background-image: url('{{ post.image.url }}')  ">
+										
+										<span class="ld-flipbox-overlay ld-overlay"></span>
+							
+										<div class="ld-flipbox-inner">
+							
+											<p class="text-fade-white-08">  {{ post.short_description }}</p>
+							
+										</div><!-- /.ld-flipbox-inner -->
+							
+									</div><!-- /.ld-flipbox-back -->
+							
+								</div><!-- /.ld-flipbox-wrap -->
+							
+							</div><!-- /.ld-flipbox -->
+
+						</div><!-- /.lqd-column col-md-6 -->
+						{% endfor %} 
+					
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+			
+		</main><!-- /#content.content -->
+		
+	
+	</div><!-- /#wrap -->
+
+	
+
+</body>
+</html>
+{% endblock %}
